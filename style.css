@@ -1,0 +1,6209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, serif;
+
+    color: #536579;
+
+    background-color: #f5f9ff;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo h1 {
+   font-size: 22px;
+    letter-spacing: 2px;
+
+    color: #5b8fbd;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    text-decoration: none;
+
+    color: #536579;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #78bce8;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+         linear-gradient(
+            rgba(25, 55, 95, 0.25),
+            rgba(85, 125, 180, 0.35)
+        ),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-small-title {
+   font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+}
+
+.hero h2 {
+    font-size: 70px;
+    line-height: 1.05;
+
+    color: #ffffff;
+
+    margin-bottom: 25px;
+}
+
+.hero-description {
+     max-width: 600px;
+    margin: 0 auto 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #f4f8ff;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: #78bce8;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #9b91d8;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.intro { 
+    max-width: 100%; 
+    margin: auto; 
+ 
+    padding: 100px 30px; 
+ 
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.section-label {
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #719b82;
+}
+
+.intro h2,
+.featured h2 {
+    font-size: 42px;
+
+    color: #5b7fa3;
+
+    margin-bottom: 20px;
+}
+
+.intro > p:last-child {
+    font-family: Arial, sans-serif;
+
+    line-height: 1.8;
+    font-size: 16px;
+
+    color: #627180;
+}
+
+
+/* =========================
+   FEATURED
+========================= */
+
+.featured {
+   padding: 90px 50px;
+
+    text-align: center;
+
+    background-color: #f8fbff;
+}
+.card-container {
+    max-width: 1100px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(120, 188, 232, 0.15);
+
+    box-shadow: 0 8px 25px rgba(80, 130, 170, 0.08);
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+
+    color: #5b7fa3;
+
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-family: Arial, sans-serif;
+
+    color: #687784;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.feature-card a {
+    text-decoration: none;
+
+    color: #648e75;
+
+    font-family: Arial, sans-serif;
+
+    font-weight: bold;
+}
+
+.featured-description {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    color: #68798a;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px 20px;
+
+    text-align: center;
+
+    background-color: #dceeff;
+
+    color: #536579;
+}
+
+footer h3 {
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+
+    color: #5b8fbd;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #66798c;
+
+    line-height: 1.6;
+}
+
+footer .copyright {
+    margin-top: 25px;
+
+    font-size: 12px;
+
+    color: #7890a5;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h2 {
+        font-size: 55px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .intro h2,
+    .featured h2 {
+        font-size: 34px;
+    }
+
+    .featured {
+        padding: 70px 20px;
+    }
+}
+
+/* =========================
+   SEVEN REALMS
+========================= */
+
+.realms-preview {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 100px 50px;
+
+    background-color:#eef5fb;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.realms-heading {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+}
+
+.realms-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.realms-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   CARDS CONTAINER
+========================= */
+
+.realms-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.realm-card {
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(80, 130, 170, 0.10);
+
+    text-align: left;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+}
+
+.realm-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 16px 35px rgba(80, 130, 170, 0.18);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.realm-card img {
+    width: 100%;
+    height: 230px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.4s ease;
+}
+
+.realm-card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.realm-info {
+    padding: 25px;
+}
+
+.realm-info span {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #78a8ce;
+}
+
+.realm-info h3 {
+    margin: 10px 0 12px;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+
+    color: #5b7fa3;
+}
+
+.realm-info p {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+.realm-info a {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #78a8ce;
+}
+
+.realm-info a:hover {
+    color: #9b91d8;
+}
+
+
+/* =========================
+   EDEN
+========================= */
+
+.eden-card {
+    grid-column: 2;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.all-realms-button {
+    display: inline-block;
+
+    margin-top: 55px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.all-realms-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .realms-preview {
+        padding: 80px 30px;
+    }
+
+    .realms-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .eden-card {
+        grid-column: 1 / 3;
+
+        width: 50%;
+
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================
+   PHONE
+========================= */
+
+@media (max-width: 600px) {
+
+    .realms-preview {
+        padding: 70px 20px;
+    }
+
+    .realms-heading h2 {
+        font-size: 34px;
+    }
+
+    .realms-container {
+        grid-template-columns: 1fr;
+    }
+
+    .eden-card {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .realm-card img {
+        height: 220px;
+    }
+}
+
+/* =========================
+   ACTIVITIES PREVIEW
+========================= */
+
+.activities-preview {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 100px 50px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.activities-heading {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+}
+
+.activities-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.activities-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Cards */
+
+.activities-container {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* Activity Card */
+
+.activity-card {
+    padding: 35px 25px;
+
+    background-color: #f5f9ff;
+
+    border-radius: 18px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 130, 170, 0.15);
+}
+
+
+/* Icon */
+
+.activity-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+
+/* Title */
+
+.activity-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    color: #5b7fa3;
+}
+
+
+/* Description */
+
+.activity-card p {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+
+/* Link */
+
+.activity-card a {
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: #78a8ce;
+}
+
+.activity-card a:hover {
+    color: #9b91d8;
+}
+
+
+/* Button */
+
+.activities-button {
+    display: inline-block;
+
+    margin-top: 55px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.activities-button:hover {
+    background-color: #78bce8;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .activities-preview {
+        padding: 80px 30px;
+    }
+
+    .activities-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .activities-preview {
+        padding: 70px 20px;
+    }
+
+    .activities-heading h2 {
+        font-size: 34px;
+    }
+
+    .activities-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   FRIENDSHIP PREVIEW
+========================= */
+
+.friendship-preview {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 100px 50px;
+
+    background-color: #f5f9ff;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.friendship-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.friendship-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.friendship-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Gallery */
+
+.friendship-gallery {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Image */
+
+.friendship-image {
+    height: 230px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.friendship-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.friendship-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* Description */
+
+.friendship-text {
+    max-width: 650px;
+
+    margin: 45px auto 0;
+}
+
+.friendship-text h3 {
+    margin-bottom: 15px;
+
+    font-size: 27px;
+
+    color: #5b7fa3;
+}
+
+.friendship-text p {
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Button */
+
+.friendship-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.friendship-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .friendship-preview {
+        padding: 80px 30px;
+    }
+
+    .friendship-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .friendship-image {
+        height: 250px;
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .friendship-preview {
+        padding: 70px 20px;
+    }
+
+    .friendship-heading h2 {
+        font-size: 34px;
+    }
+
+}
+
+/* =========================
+   COSMETICS PREVIEW
+========================= */
+
+.cosmetics-preview {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 100px 50px;
+
+    background-color: #ffffff;
+
+    text-align: center;
+}
+
+
+/* Heading */
+
+.cosmetics-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+}
+
+.cosmetics-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Gallery */
+
+.cosmetics-gallery {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Images */
+
+.cosmetics-image {
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.cosmetics-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.cosmetics-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* Text */
+
+.cosmetics-text {
+    max-width: 650px;
+
+    margin: 45px auto 0;
+}
+
+.cosmetics-text h3 {
+    margin-bottom: 15px;
+
+    font-size: 27px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-text p {
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Button */
+
+.cosmetics-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.cosmetics-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .cosmetics-preview {
+        padding: 80px 30px;
+    }
+
+    .cosmetics-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .cosmetics-image {
+        height: 280px;
+    }
+}
+
+
+/* Phone */
+
+@media (max-width: 600px) {
+
+    .cosmetics-preview {
+        padding: 70px 20px;
+    }
+
+    .cosmetics-heading h2 {
+        font-size: 34px;
+    }
+
+}
+
+/* =========================
+   GUIDE PAGE
+========================= */
+
+
+/* Guide Hero */
+
+.guide-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(35, 61, 86, 0.72),
+        rgba(35, 61, 86, 0.72)
+    ),
+    url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.guide-hero-content {
+    max-width: 750px;
+}
+
+
+.guide-hero .section-label {
+    color: #d8e9f7;
+}
+
+
+.guide-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+    line-height: 1.15;
+
+    color: #ffffff;
+}
+
+
+.guide-hero p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* Guide Introduction */
+
+.guide-intro {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 100px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+
+.guide-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+
+.guide-intro p:not(.section-label) {
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* Guide Section */
+
+.guide-section {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+
+.guide-heading {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+}
+
+
+.guide-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+
+.guide-heading > p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* Guide Cards */
+
+.guide-cards {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.guide-card {
+    padding: 35px 25px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+
+.guide-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 130, 170, 0.15);
+}
+
+
+/* Guide Icons */
+
+.guide-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+
+.guide-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+    color: #5b7fa3;
+}
+
+
+.guide-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* Important Things */
+
+.guide-important {
+    padding: 100px 50px;
+
+    background-color: #eef5fb;
+}
+
+
+.guide-important .guide-heading {
+    text-align: center;
+}
+
+
+.important-list {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.important-item {
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 25px;
+
+    align-items: center;
+
+    padding: 25px 30px;
+
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+}
+
+
+.important-number {
+    font-family: Arial, sans-serif;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #78a8cf;
+}
+
+
+.important-item h3 {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+
+.important-item p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+
+/* Gameplay Flow */
+
+.gameplay-flow {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+
+.gameplay-flow > h2 {
+    margin-bottom: 55px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+
+.flow-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.flow-step {
+    width: 190px;
+
+    padding: 25px 15px;
+
+    box-sizing: border-box;
+}
+
+
+.flow-step span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+
+.flow-step h3 {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+
+.flow-step p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    color: #68798a;
+}
+
+
+.flow-arrow {
+    font-size: 24px;
+
+    color: #9bbbd5;
+}
+
+
+/* Guide Next Section */
+
+.guide-next {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+
+.guide-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+
+.guide-next p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* Guide Button */
+
+.guide-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+
+.guide-button:hover {
+    background-color: #78bce8;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   GUIDE RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .guide-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flow-container {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .guide-hero {
+        min-height: 380px;
+
+        padding: 70px 20px;
+    }
+
+    .guide-hero h2 {
+        font-size: 40px;
+    }
+
+    .guide-section,
+    .guide-important,
+    .gameplay-flow {
+        padding: 75px 25px;
+    }
+
+    .guide-intro {
+        padding: 75px 25px;
+    }
+
+    .guide-intro h2,
+    .guide-heading h2,
+    .gameplay-flow > h2 {
+        font-size: 34px;
+    }
+
+    .guide-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .important-item {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .important-number {
+        font-size: 16px;
+    }
+
+    .flow-container {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .guide-hero h2 {
+        font-size: 34px;
+    }
+
+    .guide-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   REALMS PAGE
+========================= */
+
+.realms-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 30px;
+    box-sizing: border-box;
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(35,61,86,.72), rgba(35,61,86,.72)),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.realms-hero-content {
+    max-width: 750px;
+}
+
+.realms-hero .section-label {
+    color: #d8e9f7;
+}
+
+.realms-hero h2 {
+    margin-bottom: 25px;
+    font-size: 52px;
+    color: white;
+}
+
+.realms-hero p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   REALMS INTRO
+========================= */
+
+.realms-intro {
+    width: 100%;
+    padding: 100px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+    background-color: #eef5fb;
+}
+
+.realms-intro h2 {
+    margin-bottom: 25px;
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.realms-intro p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   REALMS LIST
+========================= */
+
+.realms-list {
+    padding: 100px 50px;
+    background-color: #f8fbff;
+}
+
+.realms-heading {
+    max-width: 700px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.realms-heading h2 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.realms-heading p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #627180;
+}
+
+
+/* =========================
+   REALM CARDS
+========================= */
+
+.realm-detail {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+    border-radius: 22px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(80,130,170,.08);
+}
+
+.realm-detail.reverse {
+    direction: rtl;
+}
+
+.realm-detail.reverse .realm-detail-content {
+    direction: ltr;
+}
+
+
+/* IMAGE */
+
+.realm-detail-image {
+    min-height: 360px;
+    overflow: hidden;
+}
+
+.realm-detail-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.realm-detail:hover .realm-detail-image img {
+    transform: scale(1.05);
+}
+
+
+/* CONTENT */
+
+.realm-detail-content {
+    padding: 55px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.realm-detail-content span {
+    margin-bottom: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+.realm-detail-content h3 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    color: #5b7fa3;
+}
+
+.realm-detail-content p {
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   REALMS NEXT
+========================= */
+
+.realms-next {
+    padding: 100px 30px;
+
+    text-align: center;
+    background-color: #e5f0f8;
+}
+
+.realms-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+    color: #4f718f;
+}
+
+.realms-next p:not(.section-label) {
+    max-width: 600px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.realms-button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+    color: #5b8fbd;
+
+    transition: .3s ease;
+}
+
+.realms-button:hover {
+    background-color: #78bce8;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   REALMS RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .realms-hero {
+        min-height: 380px;
+        padding: 70px 20px;
+    }
+
+    .realms-hero h2 {
+        font-size: 40px;
+    }
+
+    .realms-list {
+        padding: 75px 25px;
+    }
+
+    .realms-intro {
+        padding: 75px 25px;
+    }
+
+    .realms-intro h2,
+    .realms-heading h2 {
+        font-size: 34px;
+    }
+
+    .realm-detail {
+        grid-template-columns: 1fr;
+        margin-bottom: 45px;
+    }
+
+    .realm-detail.reverse {
+        direction: ltr;
+    }
+
+    .realm-detail-image {
+        min-height: 280px;
+    }
+
+    .realm-detail-content {
+        padding: 40px 30px;
+    }
+
+    .realm-detail-content h3 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .realms-hero h2 {
+        font-size: 34px;
+    }
+
+    .realms-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   ACTIVITIES PAGE
+========================= */
+
+.activities-hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(35,61,86,.72), rgba(35,61,86,.72)),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.activities-hero-content {
+    max-width: 750px;
+}
+
+.activities-hero .section-label {
+    color: #d8e9f7;
+}
+
+.activities-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+    color: white;
+}
+
+.activities-hero p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   ACTIVITIES INTRO
+========================= */
+
+.activities-intro {
+    width: 100%;
+    padding: 100px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.activities-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.activities-intro p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   ACTIVITIES LIST
+========================= */
+
+.activities-list {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+}
+
+.activities-heading {
+    max-width: 700px;
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.activities-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.activities-heading p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* =========================
+   ACTIVITY GRID
+========================= */
+
+.activity-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ACTIVITY CARD */
+
+.activity-card {
+    position: relative;
+
+    padding: 40px 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+.activity-number {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    color: #a5bfd4;
+}
+
+.activity-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+.activity-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+    color: #5b7fa3;
+}
+
+.activity-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   CANDLE RUN
+========================= */
+
+.candle-run {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(80,130,170,.08);
+}
+
+.candle-run-image {
+    min-height: 430px;
+}
+
+.candle-run-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.candle-run-content {
+    padding: 55px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.candle-run-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+
+    color: #5b7fa3;
+}
+
+.candle-run-content p:not(.section-label) {
+    margin-bottom: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #68798a;
+}
+
+
+/* CANDLE RUN STEPS */
+
+.cr-steps {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.cr-steps div {
+    padding-top: 15px;
+
+    border-top: 1px solid #dbeaf4;
+}
+
+.cr-steps span {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    color: #78a8cf;
+}
+
+.cr-steps h3 {
+    margin: 8px 0;
+
+    font-size: 17px;
+
+    color: #5b7fa3;
+}
+
+.cr-steps p {
+    margin: 0 !important;
+
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================
+   SOCIAL ACTIVITY
+========================= */
+
+.activity-social {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+.activity-social h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+.activity-social p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.activities-button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: .3s ease;
+}
+
+.activities-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   ACTIVITIES RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .activity-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .candle-run {
+        grid-template-columns: 1fr;
+    }
+
+    .candle-run-image {
+        min-height: 300px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .activities-hero {
+        min-height: 380px;
+        padding: 70px 20px;
+    }
+
+    .activities-hero h2 {
+        font-size: 40px;
+    }
+
+    .activities-list {
+        padding: 75px 25px;
+    }
+
+    .activities-intro {
+        padding: 75px 25px;
+    }
+
+    .activities-intro h2,
+    .activities-heading h2 {
+        font-size: 34px;
+    }
+
+    .activity-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .candle-run-content {
+        padding: 40px 30px;
+    }
+
+    .cr-steps {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .activities-hero h2 {
+        font-size: 34px;
+    }
+
+    .activities-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   FRIENDSHIP PAGE
+========================= */
+
+.friendship-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(35,61,86,.72), rgba(35,61,86,.72)),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.friendship-hero-content {
+    max-width: 750px;
+}
+
+.friendship-hero .section-label {
+    color: #d8e9f7;
+}
+
+.friendship-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+    color: white;
+}
+
+.friendship-hero p:last-child {
+    max-width: 650px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.friendship-intro {
+    width: 100%;
+
+    padding: 100px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.friendship-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.friendship-intro p:not(.section-label) {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   COMMUNICATION
+========================= */
+
+.friendship-section {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.friendship-heading {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+.friendship-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.friendship-heading p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* CARDS */
+
+.friendship-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.friendship-card {
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.friendship-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+.friendship-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+.friendship-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+    color: #5b7fa3;
+}
+
+.friendship-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   FRIENDSHIP LEVEL
+========================= */
+
+.friendship-level {
+    padding: 100px 50px;
+
+    background-color: #eef5fb;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.friendship-level-content {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.friendship-level-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.friendship-level-content p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* =========================
+   INTERACTION GALLERY
+========================= */
+
+.friendship-interaction-gallery {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto 35px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.interaction-image {
+    width: 100%;
+
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background-color: white;
+}
+
+.interaction-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.interaction-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   FRIENDSHIP STEPS
+========================= */
+
+.friendship-steps {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.friendship-step {
+    padding: 25px 20px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.friendship-step:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(80,130,170,.12);
+}
+
+.friendship-step span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+.friendship-step h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+
+    color: #5b7fa3;
+}
+
+.friendship-step p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   NEXT
+========================= */
+
+.friendship-next {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+.friendship-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+.friendship-next p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.friendship-next .friendship-button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: .3s ease;
+}
+
+.friendship-next .friendship-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .friendship-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .friendship-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .friendship-photo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .friendship-photo.large {
+        grid-column: span 2;
+    }
+
+    .friendship-interaction-gallery {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.friendship-steps {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+
+@media (max-width: 650px) {
+
+    .friendship-hero {
+        min-height: 380px;
+        padding: 70px 20px;
+    }
+
+    .friendship-hero h2 {
+        font-size: 40px;
+    }
+
+    .friendship-intro {
+        padding: 75px 25px;
+    }
+
+    .friendship-section,
+    .friendship-level,
+    .friendship-gallery-section {
+        padding: 75px 25px;
+    }
+
+    .friendship-intro h2,
+    .friendship-heading h2,
+    .friendship-level-content h2 {
+        font-size: 34px;
+    }
+
+    .friendship-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .friendship-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .friendship-photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .friendship-photo.large {
+        grid-column: auto;
+    }
+.friendship-interaction-gallery {
+    grid-template-columns: 1fr;
+}
+
+.friendship-steps {
+    grid-template-columns: 1fr;
+}
+
+.interaction-image {
+    height: 230px;
+}
+}
+
+
+@media (max-width: 500px) {
+
+    .friendship-hero h2 {
+        font-size: 34px;
+    }
+
+    .friendship-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   COSMETICS PAGE
+========================= */
+
+.cosmetics-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(35,61,86,.72), rgba(35,61,86,.72)),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cosmetics-hero-content {
+    max-width: 750px;
+}
+
+.cosmetics-hero .section-label {
+    color: #d8e9f7;
+}
+
+.cosmetics-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+
+    color: white;
+}
+
+.cosmetics-hero p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.cosmetics-intro {
+    width: 100%;
+
+    padding: 100px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.cosmetics-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-intro p:not(.section-label) {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   COSMETIC TYPES
+========================= */
+
+.cosmetics-types {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.cosmetics-heading {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+.cosmetics-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-heading p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* GRID */
+
+.cosmetics-type-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.cosmetic-type-card {
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.cosmetic-type-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+.cosmetic-type-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+.cosmetic-type-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 21px;
+
+    color: #5b7fa3;
+}
+
+.cosmetic-type-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   SHOWCASE
+========================= */
+
+.cosmetics-showcase {
+    padding: 100px 50px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.cosmetics-showcase-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.cosmetic-showcase-image {
+    height: 330px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.cosmetic-showcase-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.cosmetic-showcase-image:hover img {
+    transform: scale(1.06);
+}
+
+
+/* =========================
+   HOW TO GET
+========================= */
+
+.cosmetics-get {
+    padding: 100px 50px;
+
+    background-color: #eef5fb;
+}
+
+.cosmetics-get-content {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.cosmetics-get-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-get-content p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* LIST */
+
+.cosmetics-get-list {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.cosmetics-get-item {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 25px 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border-radius: 16px;
+}
+
+.cosmetics-get-item > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #78a8cf;
+}
+
+.cosmetics-get-item h3 {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+.cosmetics-get-item p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   NEXT
+========================= */
+
+.cosmetics-next {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+.cosmetics-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+.cosmetics-next p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.cosmetics-next-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: .3s ease;
+}
+
+.cosmetics-next-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .cosmetics-type-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cosmetics-showcase-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cosmetic-showcase-image:first-child {
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .cosmetics-hero {
+        min-height: 380px;
+
+        padding: 70px 20px;
+    }
+
+    .cosmetics-hero h2 {
+        font-size: 40px;
+    }
+
+    .cosmetics-intro {
+        padding: 75px 25px;
+    }
+
+    .cosmetics-types,
+    .cosmetics-showcase,
+    .cosmetics-get {
+        padding: 75px 25px;
+    }
+
+    .cosmetics-intro h2,
+    .cosmetics-heading h2,
+    .cosmetics-get-content h2 {
+        font-size: 34px;
+    }
+
+    .cosmetics-type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cosmetics-showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cosmetic-showcase-image:first-child {
+        grid-column: auto;
+    }
+
+    .cosmetic-showcase-image {
+        height: 280px;
+    }
+
+    .cosmetics-get-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cosmetics-hero h2 {
+        font-size: 34px;
+    }
+
+    .cosmetics-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+/* =====================================================
+   SEASONS PAGE
+===================================================== */
+
+
+/* =========================
+   SEASONS HERO
+========================= */
+
+.seasons-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(35, 61, 86, 0.72),
+            rgba(35, 61, 86, 0.72)
+        ),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.seasons-hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.seasons-hero .section-label {
+    color: #d8e9f7;
+}
+
+.seasons-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+
+    color: white;
+}
+
+.seasons-hero p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   SEASONS INTRO
+========================= */
+
+.seasons-intro {
+    width: 100%;
+
+    padding: 100px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.seasons-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.seasons-intro p:not(.section-label) {
+    max-width: 750px;
+
+    margin: 0 auto 18px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   COMMON SEASONS HEADING
+========================= */
+
+.seasons-heading {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.seasons-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.seasons-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* =========================
+   SEASON FEATURES
+========================= */
+
+.season-features {
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.season-feature-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.season-feature-card {
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.season-feature-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 130, 170, 0.15);
+}
+
+.season-feature-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+.season-feature-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+.season-feature-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   SEASON JOURNEY
+========================= */
+
+.season-journey {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(80, 130, 170, 0.08);
+}
+
+.season-journey-image {
+    min-height: 430px;
+
+    overflow: hidden;
+}
+
+.season-journey-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+.season-journey-content {
+    padding: 55px 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.season-journey-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+
+    color: #5b7fa3;
+}
+
+.season-journey-content > p:not(.section-label) {
+    margin-bottom: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   SEASON JOURNEY STEPS
+========================= */
+
+.season-steps {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.season-steps > div {
+    padding-top: 15px;
+
+    border-top: 1px solid #dbeaf4;
+}
+
+.season-steps span {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #78a8cf;
+}
+
+.season-steps h3 {
+    margin: 8px 0;
+
+    font-size: 17px;
+
+    color: #5b7fa3;
+}
+
+.season-steps p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   SEASON GALLERY
+========================= */
+
+.season-gallery-section {
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.season-gallery {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.season-gallery-card {
+    overflow: hidden;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+.season-gallery-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 130, 170, 0.15);
+}
+
+.season-gallery-card img {
+    width: 100%;
+    height: 280px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.season-gallery-card:hover img {
+    transform: scale(1.05);
+}
+
+.season-gallery-card > div {
+    padding: 25px;
+}
+
+.season-gallery-card span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+.season-gallery-card h3 {
+    margin: 10px 0 12px;
+
+    font-size: 22px;
+
+    color: #5b7fa3;
+}
+
+.season-gallery-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   SPIRIT ITEMS
+========================= */
+
+.season-items {
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.season-items-grid {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.season-item-image {
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background-color: #f8fbff;
+}
+
+.season-item-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    transition: transform 0.5s ease;
+}
+
+.season-item-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   SEASON OUTFITS
+========================= */
+
+.season-outfits {
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+
+    background-color: #eef5fb;
+
+    text-align: center;
+}
+
+.season-outfit-grid {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.season-outfit-image {
+    height: 360px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    background-color: white;
+}
+
+.season-outfit-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    transition: transform 0.5s ease;
+}
+
+.season-outfit-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   SEASON VS EVENT
+========================= */
+
+.season-event-difference {
+    padding: 100px 50px;
+
+    box-sizing: border-box;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.difference-grid {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.difference-card {
+    padding: 40px 35px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.difference-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(80, 130, 170, 0.12);
+}
+
+.difference-card > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+.difference-card h3 {
+    margin: 12px 0 15px;
+
+    font-size: 24px;
+
+    color: #5b7fa3;
+}
+
+.difference-card p {
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+.difference-card a {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.difference-card a:hover {
+    color: #78bce8;
+}
+
+
+/* =========================
+   SEASONS NEXT
+========================= */
+
+.seasons-next {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+.seasons-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+.seasons-next p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.seasons-next-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: 0.3s ease;
+}
+
+.seasons-next-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   SEASONS RESPONSIVE
+===================================================== */
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .season-feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .season-journey {
+        grid-template-columns: 1fr;
+
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .season-journey-image {
+        min-height: 320px;
+    }
+
+    .season-journey-content {
+        padding: 50px 40px;
+    }
+
+    .season-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .season-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .season-outfit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .difference-grid {
+        max-width: 650px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .seasons-hero {
+        min-height: 380px;
+
+        padding: 70px 20px;
+    }
+
+    .seasons-hero h2 {
+        font-size: 40px;
+    }
+
+    .seasons-intro {
+        padding: 75px 25px;
+    }
+
+    .season-features,
+    .season-gallery-section,
+    .season-items,
+    .season-outfits,
+    .season-event-difference {
+        padding: 75px 25px;
+    }
+
+    .seasons-intro h2,
+    .seasons-heading h2 {
+        font-size: 34px;
+    }
+
+    .season-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .season-journey {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        border-radius: 18px;
+    }
+
+    .season-journey-image {
+        min-height: 300px;
+    }
+
+    .season-journey-content {
+        padding: 40px 25px;
+    }
+
+    .season-journey-content h2 {
+        font-size: 34px;
+    }
+
+    .season-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .season-gallery {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+    }
+
+    .season-gallery-card img {
+        height: 260px;
+    }
+
+    .season-items-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .season-item-image {
+        height: 350px;
+    }
+
+    .season-outfit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .season-outfit-image {
+        height: 380px;
+    }
+
+    .difference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .seasons-next {
+        padding: 75px 25px;
+    }
+
+    .seasons-next h2 {
+        font-size: 34px;
+    }
+}
+
+
+/* SMALL PHONE */
+
+@media (max-width: 500px) {
+
+    .seasons-hero h2 {
+        font-size: 34px;
+    }
+
+    .seasons-hero p:last-child {
+        font-size: 14px;
+    }
+
+    .season-gallery-card img {
+        height: 230px;
+    }
+
+    .season-item-image {
+        height: 300px;
+    }
+
+    .season-outfit-image {
+        height: 330px;
+    }
+}
+/* SEASON FILTER BUTTONS */
+
+.season-filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.season-filter {
+    padding: 11px 24px;
+    border: 1px solid #78bce8;
+    border-radius: 25px;
+    background-color: white;
+    color: #5b8fbd;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.season-filter:hover,
+.season-filter.active {
+    background-color: #78bce8;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .season-filter-buttons {
+        gap: 8px;
+    }
+
+    .season-filter {
+        padding: 10px 18px;
+        font-size: 11px;
+    }
+
+} 
+
+/* =====================================================
+   SEASON INFORMATION BOX
+===================================================== */
+
+.season-info-box {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 45px 50px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(80, 130, 170, 0.08);
+    transition: 0.3s ease;
+}
+
+.season-info-box h2 {
+    margin: 10px 0 18px;
+    font-size: 32px;
+    color: #5b7fa3;
+}
+
+.season-info-box > p:not(.section-label) {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #68798a;
+}
+
+.season-info-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.season-info-feature {
+    padding: 18px 15px;
+    background-color: #eef5fb;
+    border-radius: 14px;
+}
+
+.season-info-feature span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #78bce8;
+}
+
+.season-info-feature p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #5f7182;
+}
+
+
+/* HOVER */
+
+.season-info-feature {
+    transition: 0.3s ease;
+}
+
+.season-info-feature:hover {
+    transform: translateY(-4px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .season-info-box {
+        padding: 35px 25px;
+    }
+
+    .season-info-box h2 {
+        font-size: 28px;
+    }
+
+    .season-info-features {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   EVENTS PAGE
+========================= */
+
+.events-hero {
+    min-height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(35,61,86,.72), rgba(35,61,86,.72)),
+        url("../assets/images/hero.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.events-hero-content {
+    max-width: 750px;
+}
+
+.events-hero .section-label {
+    color: #d8e9f7;
+}
+
+.events-hero h2 {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+
+    color: white;
+}
+
+.events-hero p:last-child {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #edf6fc;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.events-intro {
+    width: 100%;
+
+    padding: 100px 30px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #eef5fb;
+}
+
+.events-intro h2 {
+    margin-bottom: 25px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.events-intro p:not(.section-label) {
+    max-width: 750px;
+
+    margin: 0 auto 15px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: #627180;
+}
+
+
+/* =========================
+   EVENT TYPES
+========================= */
+
+.events-types {
+    padding: 100px 50px;
+
+    background-color: #f8fbff;
+
+    text-align: center;
+}
+
+.events-heading {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+.events-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.events-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* EVENT TYPE GRID */
+
+.event-type-grid {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+/* EVENT TYPE CARD */
+
+.event-type-card {
+    padding: 35px 25px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s ease;
+}
+
+.event-type-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+.event-type-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eef5fb;
+
+    font-size: 30px;
+}
+
+.event-type-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+.event-type-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   FEATURED EVENTS
+========================= */
+
+.featured-events {
+    padding: 100px 50px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.featured-event-grid {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* EVENT CARD */
+
+.featured-event-card {
+    overflow: hidden;
+
+    background-color: #f8fbff;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    transition: .3s ease;
+}
+
+.featured-event-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+
+/* EVENT IMAGE */
+
+.featured-event-image {
+    width: 100%;
+
+    height: 230px;
+
+    overflow: hidden;
+}
+
+.featured-event-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transform: scale(1.05);
+
+    transition: transform .5s ease;
+}
+
+.featured-event-card:hover img {
+    transform: scale(1.10);
+}
+
+
+/* EVENT INFO */
+
+.featured-event-info {
+    padding: 25px;
+}
+
+.featured-event-info span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #78a8cf;
+}
+
+.featured-event-info h3 {
+    margin: 10px 0 12px;
+
+    font-size: 22px;
+
+    color: #5b7fa3;
+}
+
+.featured-event-info p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   EVENT TIPS
+========================= */
+
+.event-tips {
+    padding: 100px 50px;
+
+    background-color: #eef5fb;
+}
+
+.event-tips-content {
+    max-width: 700px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+.event-tips-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+.event-tips-content p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* TIP LIST */
+
+.event-tip-list {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.event-tip {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    padding: 25px 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border-radius: 16px;
+}
+
+.event-tip > span {
+    font-family: Arial, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #78a8cf;
+}
+
+.event-tip h3 {
+    margin-bottom: 7px;
+
+    font-size: 20px;
+
+    color: #5b7fa3;
+}
+
+.event-tip p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #68798a;
+}
+
+
+/* =========================
+   NEXT SECTION
+========================= */
+
+.events-next {
+    padding: 100px 30px;
+
+    text-align: center;
+
+    background-color: #e5f0f8;
+}
+
+.events-next h2 {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+
+    color: #4f718f;
+}
+
+.events-next p:not(.section-label) {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+.events-next-button {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 30px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #5b8fbd;
+
+    transition: .3s ease;
+}
+
+.events-next-button:hover {
+    background-color: #78bce8;
+
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .event-type-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .events-hero {
+        min-height: 380px;
+
+        padding: 70px 20px;
+    }
+
+    .events-hero h2 {
+        font-size: 40px;
+    }
+
+    .events-intro {
+        padding: 75px 25px;
+    }
+
+    .events-types,
+    .featured-events,
+    .event-tips {
+        padding: 75px 25px;
+    }
+
+    .events-intro h2,
+    .events-heading h2,
+    .event-tips-content h2 {
+        font-size: 34px;
+    }
+
+    .event-type-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-tip {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .events-hero h2 {
+        font-size: 34px;
+    }
+
+    .events-hero p:last-child {
+        font-size: 14px;
+    }
+
+}
+
+.navbar.scrolled {
+    background-color: #dcecf8;
+
+    box-shadow: 0 8px 25px rgba(50, 90, 120, 0.25);
+
+    border-bottom: 2px solid #78bce8;
+}
+
+/* =========================
+   BACK TO TOP BUTTON
+========================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #78bce8;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: .3s ease;
+
+    z-index: 999;
+}
+
+
+.back-to-top.show {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+
+.back-to-top:hover {
+    background-color: #5b8fbd;
+
+    transform: translateY(-4px);
+}
+
+/* =====================================================
+   EVENT DETAILS
+===================================================== */
+
+.event-details {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 55px auto 0;
+
+    padding: 45px 50px;
+
+    box-sizing: border-box;
+
+    background-color: #eef5fb;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(80,130,170,.08);
+
+    transition: .3s ease;
+}
+
+.event-details h2 {
+    margin: 10px 0 18px;
+
+    font-size: 34px;
+
+    color: #5b7fa3;
+}
+
+.event-details-description {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #68798a;
+}
+
+
+/* DETAIL LIST */
+
+.event-detail-list {
+    max-width: 750px;
+
+    margin: 30px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.event-detail-item {
+    padding: 20px 15px;
+
+    background-color: white;
+
+    border-radius: 14px;
+
+    transition: .3s ease;
+}
+
+.event-detail-item:hover {
+    transform: translateY(-4px);
+}
+
+.event-detail-item span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 20px;
+
+    color: #78bce8;
+}
+
+.event-detail-item p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #5f7182;
+}
+
+
+/* CLICKABLE EVENT CARDS */
+
+.featured-event-card {
+    cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .event-details {
+        padding: 35px 25px;
+
+        margin-top: 40px;
+    }
+
+    .event-details h2 {
+        font-size: 29px;
+    }
+
+    .event-detail-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   REALM EXPLORER
+========================= */
+
+.realm-explorer {
+    padding: 100px 50px;
+
+    background-color: #eef5fb;
+
+    text-align: center;
+}
+
+
+.realm-explorer-heading {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+}
+
+
+.realm-explorer-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+
+    color: #5b7fa3;
+}
+
+
+.realm-explorer-heading p:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #627180;
+}
+
+
+/* FILTER BUTTONS */
+
+.realm-filter-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+.realm-filter {
+    padding: 11px 25px;
+
+    border: 1px solid #78bce8;
+
+    border-radius: 25px;
+
+    background-color: white;
+
+    color: #5b8fbd;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+
+.realm-filter:hover,
+.realm-filter.active {
+    background-color: #78bce8;
+
+    color: white;
+}
+
+
+/* RESULT CARDS */
+
+.realm-results {
+    width: 100%;
+
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.realm-filter-card {
+    overflow: hidden;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    text-align: left;
+
+    transition: .3s ease;
+}
+
+
+.realm-filter-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 30px rgba(80,130,170,.15);
+}
+
+
+.realm-filter-image {
+    width: 100%;
+
+    height: 190px;
+
+    overflow: hidden;
+}
+
+
+.realm-filter-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+
+.realm-filter-card:hover img {
+    transform: scale(1.06);
+}
+
+
+.realm-filter-content {
+    padding: 25px;
+}
+
+
+.realm-filter-content span {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #78a8cf;
+}
+
+
+.realm-filter-content h3 {
+    margin: 10px 0 12px;
+
+    font-size: 22px;
+
+    color: #5b7fa3;
+}
+
+
+.realm-filter-content p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: #68798a;
+}
+
+
+@media(max-width:900px) {
+
+    .realm-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media(max-width:650px) {
+
+    .realm-explorer {
+        padding: 75px 25px;
+    }
+
+    .realm-explorer-heading h2 {
+        font-size: 34px;
+    }
+
+    .realm-results {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   SEASONS & EVENTS PREVIEW
+========================= */
+
+.seasons-preview {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 50px;
+    background-color: #f5f9ff;
+    text-align: center;
+}
+
+.seasons-heading {
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.seasons-heading h2 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: #5b7fa3;
+}
+
+.seasons-heading p:last-child {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #68798a;
+}
+
+
+/* EVENT CARDS */
+
+.seasons-gallery {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.season-card {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 18px;
+    text-align: left;
+    transition: .3s ease;
+}
+
+.season-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(80,130,170,.15);
+}
+
+.season-image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+}
+
+.season-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.season-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* EVENT INFORMATION */
+
+.season-info {
+    padding: 25px;
+}
+
+.season-info span {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #78a8cf;
+}
+
+.season-info h3 {
+    margin: 10px 0 12px;
+    font-size: 23px;
+    color: #5b7fa3;
+}
+
+.season-info p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #68798a;
+}
+
+
+/* BUTTON */
+
+.seasons-button {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 14px 30px;
+    border: 1px solid #78bce8;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #5b8fbd;
+    transition: .3s ease;
+}
+
+.seasons-button:hover {
+    background-color: #78bce8;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .seasons-preview {
+        padding: 80px 30px;
+    }
+
+    .seasons-gallery {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .seasons-preview {
+        padding: 70px 20px;
+    }
+
+    .seasons-heading h2 {
+        font-size: 34px;
+    }
+
+    .season-image {
+        height: 230px;
+    }
+
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #5b7fa3;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+/* ==========================================
+   CAROUSEL SECTION (MODERN & CLEAN)
+   ========================================== */
+.carousel-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f8fbff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(91, 127, 163, 0.2);
+    background-color: #000;
+}
+
+/* Slide & Animation */
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay Caption Teks di Atas Gambar */
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 30px 25px;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.85));
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.carousel-caption h3 {
+    margin: 0 0 6px 0;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    margin: 0;
+    font-size: 15px;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Tombol Navigasi Panah Floating */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.85);
+    color: #5b7fa3;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: #ffffff;
+    color: #3b5a7a;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+/* Responsive Tablet & HP */
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 320px;
+        border-radius: 14px;
+    }
+
+    .carousel-caption {
+        padding: 20px 20px 15px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 20px;
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+}
+
+/* BURGER MENU & RESPONSIVE NAVBAR */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #5b7fa3;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Tampilan di HP / Layar Kecil */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 25px;
+        display: block;
+    }
+}
+
+/* Styling Nav Links & Spacing untuk Desktop */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Sembunyikan ikon burger menu di Laptop/Desktop */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #5b7fa3;
+    border-radius: 2px;
+}
+
+/* Mode Mobile / Layar HP (< 768px) */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex; /* Tampilkan burger icon hanya di HP */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan menu bawaan di HP */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 10px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    /* Saat burger icon diklik di HP, menu akan muncul */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* ==========================================
+   CONTACT SECTION (MODERN CARD STYLE)
+   ========================================== */
+.contact-section {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f4f8fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(91, 127, 163, 0.12);
+    border: 1px solid rgba(91, 127, 163, 0.15);
+}
+
+.contact-card h2 {
+    margin: 0 0 8px 0;
+    color: #3b5a7a;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Group & Input Styling */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #1e293b;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Focus State Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #5b7fa3;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(91, 127, 163, 0.15);
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #5b7fa3;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #3b5a7a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(59, 90, 122, 0.25);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+} 
+
+/* VISITOR COUNT BADGE */
+.visitor-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #f4f8fb;
+}
+
+.visitor-card {
+    background: #ffffff;
+    padding: 10px 24px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(91, 127, 163, 0.15);
+    border: 1px solid rgba(91, 127, 163, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.visitor-text {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 600;
+}
+
+.visitor-number {
+    font-size: 16px;
+    color: #5b7fa3;
+    font-weight: bold;
+    background: #eef5fc;
+    padding: 2px 10px;
+    border-radius: 12px;
+}
+
+/* ==========================================
+   1. STYLE BAWAAN (LIGHT MODE / TERANG)
+   ========================================== */
+body {
+    background-color: #ffffff;
+    color: #1e293b;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Tombol Mode di Navbar */
+.theme-btn, #themeToggle {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* ==========================================
+   2. STYLE DARK MODE (GELAP TOTAL & RATA)
+   ========================================== */
+
+/* Ubah Background Utama & Navbar jadi Hitam Gelap */
+[data-theme="dark"] body,
+[data-theme="dark"] header,
+[data-theme="dark"] nav {
+    background-color: #0f172a !important; /* Warna dasar gelap */
+}
+
+/* PAKSA SEMUA SECTION & DIV DENGAN BACKGROUND PUTIH/TERANG JADI GELAP */
+[data-theme="dark"] section,
+[data-theme="dark"] div,
+[data-theme="dark"] main,
+[data-theme="dark"] article,
+[data-theme="dark"] .section-alt,
+[data-theme="dark"] .activities-header,
+[data-theme="dark"] .hero-section {
+    background-color: #0f172a !important; /* Menghilangkan background putih yang tersisa */
+    color: #f8fafc !important;
+}
+
+/* UBAH WARNA KARTU/CARD AGAR AGAK TERANG DARI BACKGROUND (TIDAK MATI) */
+[data-theme="dark"] .card,
+[data-theme="dark"] .activity-card,
+[data-theme="dark"] .grid-item,
+[data-theme="dark"] .contact-card,
+[data-theme="dark"] .visitor-card {
+    background-color: #1e293b !important; /* Warna kartu biru-abu gelap */
+    border: 1px solid #334155 !important;
+}
+
+/* PAKSA SEMUA TEKS & JUDUL DI DARK MODE JADI PUTIH TERANG */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] span,
+[data-theme="dark"] a,
+[data-theme="dark"] li,
+[data-theme="dark"] label {
+    color: #f8fafc !important; /* Teks pasti kelihatan dibaca */
+}
+
+/* Sub-judul kecil warna hijau/abu pudar agar kontras rapi */
+[data-theme="dark"] .subtitle, 
+[data-theme="dark"] small {
+    color: #38bdf8 !important;
+}
+
+/* Style Tombol Mode saat Dark Mode */
+[data-theme="dark"] .theme-btn, 
+[data-theme="dark"] #themeToggle {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border-color: #38bdf8 !important;
+}
+
+/* ==========================================
+   FIX BANNER HERO & FOOTER DARK MODE
+   ========================================== */
+
+/* 2. Paksa Footer ikut berubah menjadi gelap di Dark Mode */
+[data-theme="dark"] footer,
+[data-theme="dark"] .footer,
+[data-theme="dark"] footer * {
+    background-color: #0f172a !important; /* Sama dengan warna background utama */
+    color: #f8fafc !important;            /* Teks footer jadi terang */
+}
+
+
+/* ==========================================
+   SAPU BERSIH: TRANSPARAN TOTAL UNTUK BANNER
+   ========================================== */
+
+/* 1. Target semua kemungkinan class pembungkus teks di banner */
+.hero *, 
+.hero-section *, 
+.banner *, 
+.banner-content *,
+.header-content *,
+.welcome-section *,
+.intro *,
+.intro-content * {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 2. Jika elemennya dibungkus div/box di dalam section pertama */
+section:first-of-type div,
+main > div:first-child,
+main > section:first-child div {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 3. Pastikan teks banner tetap putih bersinar di atas gambar */
+section:first-of-type h1,
+section:first-of-type p,
+section:first-of-type span,
+.hero h1, .hero p, 
+.banner h1, .banner p {
+    color: #ffffff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+}

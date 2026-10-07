@@ -1,0 +1,46 @@
+{
+    "realms": [
+        {
+            "name": "Isle of Dawn",
+            "type": "peaceful",
+            "description": "A calm starting realm where new players learn the basics of Sky.",
+            "image": "assets/images/isle.jpeg"
+        },
+        {
+            "name": "Daylight Prairie",
+            "type": "peaceful",
+            "description": "A bright and open realm filled with grasslands and peaceful landscapes.",
+            "image": "assets/images/prairie.jpeg"
+        },
+        {
+            "name": "Hidden Forest",
+            "type": "challenging",
+            "description": "A rainy forest realm where players must protect their light.",
+            "image": "assets/images/forest.jpeg"
+        },
+        {
+            "name": "Valley of Triumph",
+            "type": "challenging",
+            "description": "A snowy realm known for flying, racing, and beautiful mountain views.",
+            "image": "assets/images/valley.jpeg"
+        },
+        {
+            "name": "Golden Wasteland",
+            "type": "challenging",
+            "description": "A dangerous realm filled with ruins, storms, and creatures.",
+            "image": "assets/images/wasteland.jpeg"
+        },
+        {
+            "name": "Vault of Knowledge",
+            "type": "peaceful",
+            "description": "A mysterious tower filled with different levels and ancient memories.",
+            "image": "assets/images/vault.jpeg"
+        },
+        {
+            "name": "Eye of Eden",
+            "type": "challenging",
+            "description": "The final realm of the main journey and one of the most challenging areas.",
+            "image": "assets/images/eden.jpeg"
+        }
+    ]
+}
